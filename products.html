@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Northwind Groceries - Products</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Northwind Groceries</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="productFilters">
+            <h2>Find Your Products</h2>
+            <div class="dropdowns">
+                <select id="selectOneDropdown">
+                    <option value="">Select One</option>
+                    <!-- Options will be added dynamically -->
+                </select>
+                <select id="searchByItemDropdown">
+                    <option value="">Search by Item</option>
+                    <!-- Options will be added dynamically -->
+                </select>
+                <select id="viewAllDropdown">
+                    <option value="">View All</option>
+                    <option value="all">All Products</option>
+                </select>
+            </div>
+        </section>
+        <section id="productTableSection">
+            <table id="productTable" border="1" style="width:100%; margin-top: 20px; display: none;">
+                <thead>
+                    <tr>
+                        <th>Product ID</th>
+                        <th>Product Name</th>
+                        <th>Unit Price</th>
+                        <th>Units In Stock</th>
+                        <th>Category ID</th>
+                        <th>Supplier</th>
+                        <th>Discontinued</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Table rows will be added dynamically -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact us at: <a href="mailto:support@northwindgroceries.com">support@northwindgroceries.com</a></p>
+    </footer>
+    <script src="scripts.js"></script>
+    <script src="script.js"></script>
+
+    
+</body>
+</html>
